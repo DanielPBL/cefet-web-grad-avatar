@@ -37,11 +37,33 @@
           <img src="imgs/acessorio-bandana.png" alt="Bandana" id="avatar-bandana" class="avatar-acessorio">
         </div>
         <p id="avatar-nome">Meu nome...</p>
+        <button id="ctr-baixar"><img src="imgs/icone-tesoura.png" alt="tesoura">Baixar avatar</button>
       </section>
       <section id="secao-controles">
         <h2>Controles</h2>
         <div>
-          <!-- coloque os controles aqui -->
+          <label>Nome:
+            <input type="text" id="ctr-nome" maxlength="50">
+          </label>
+          <label>Cor da pele:
+            <input type="color" id="ctr-cor">
+          </label>
+          <label>Cabelo:
+            <select id="ctr-cabelo">
+                <option selected value="imgs/cabelo-careca.png">Cabelo careca</option>
+                <option value="imgs/cabelo-alaranjado-curto.png">Cabelo alaranjado curto</option>
+                <option value="imgs/cabelo-azul-longo.png">Cabelo azul longo</option>
+                <option value="imgs/cabelo-marrom-curto.png">Cabelo marrom curto</option>
+                <option value="imgs/cabelo-preto-medio.png">Cabelo preto médio</option>
+                <option value="imgs/cabelo-roxo-curto.png">Cabelo roxo curto</option>
+                <option value="imgs/cabelo-verde-medio.png">Cabelo verde médio</option>
+            </select>
+          </label>
+          <label>Acessórios: <br>
+            <input type="checkbox" id="ctr-oculos" value="avatar-oculos">Óculos de grau <br>
+            <input type="checkbox" id="ctr-lacinhos" value="avatar-lacinhos">Lacinhos vermelhos <br>
+            <input type="checkbox" id="ctr-bandana" value="avatar-bandana">Bandana amarela <br>
+          </label>
         </div>
       </section>
       <section id="secao-instrucoes">
@@ -58,6 +80,10 @@
             Pixel Art Avatar Icon Generator</a>.</p>
       </section>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="html2canvas.js" charset="utf-8"></script>
     <script src="avatar.js" charset="utf-8"></script>
+
+
   </body>
 </html>
